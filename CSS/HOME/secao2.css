@@ -1,0 +1,15 @@
+.secaoLinkDedicadoEComAWZnetTelecom {
+    min-height: 45vh;
+    background-color: var(--branco);
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+}
+
+
+
+
+.tituloPrincipalSecao2 {
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+}

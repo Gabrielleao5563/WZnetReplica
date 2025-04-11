@@ -1,0 +1,81 @@
+.menuTopo {
+    width: 100%;
+    height: 7vh;
+    padding: 10 0 10 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--branco);
+}
+
+
+
+
+
+.menuTopoSecao1 {
+    width: 15%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menuTopoSecao1 > a {
+    width: 70%;
+    text-decoration: none;
+}
+
+.menuTopoSecao2 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.menuTopoOpcao {
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 1vh;
+    transition-duration: 0.2s;
+}
+.menuTopoOpcao > a {
+    text-decoration: none;
+}
+.menuTopoOpcao > a > p {
+    color: black;
+    font-weight: light;
+}
+
+.menuTopoOpcao:hover {
+    background-color: var(--brancoHover);
+}
+
+
+
+
+.menuTopoBotaoDireito {
+    cursor: pointer;
+    background-color: var(--azulEscuroWZ);
+    padding: 1vh;
+    border-radius: 5%;
+    transition-duration: 0.2s;
+    transition-delay: 2s;
+}
+.menuTopoBotaoDireito > a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuTopoBotaoDireito:hover {
+    margin-bottom: 1%;
+    transition-delay: 0s;
+}
