@@ -1,3 +1,15 @@
 .mostrarBordas {
     border: solid 1px cyan;
 }
+
+.laranja {
+    color: var(--laranjaDestaque);
+}
+.verde {
+
+}
+
+.strong {
+    color: black;
+    font-weight: bold;
+}

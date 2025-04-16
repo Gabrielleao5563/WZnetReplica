@@ -1,19 +1,175 @@
+/* Div da seção */
 .secaoLinkDedicadoEComAWZnetTelecom {
     min-height: 45vh;
     background-color: var(--branco);
     margin-top: 6vh;
     margin-bottom: 3vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
 
-
+/* Div que mantem o conteúdo centralizado */
 .divConteudo1Secao2 {
+    margin-top: 3%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Blocos dentro da seção */
+.blocoSecao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 90vw;
+    max-width: 500px;
+    min-height: 20vh;
+    padding-bottom: 3vh;
+    margin-bottom: 5vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0.1vw 0.1vw 2vh;
+}
+
+/* Imagem dentro dos blocos */
+.containerImagemBlocoSecao2 {
+    padding-bottom: 5%;
+}
+.imagemHolderBlocoSecao2 {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    z-index: 1;
+}
+.imagemHolderBlocoSecao2 > img {
+    width: 100%;
+    opacity: 0;
+}
+
+/* Imagens definidas nos blocos da Seção */
+#secao2ImagemHolder1 {
+    background-image: url('../../IMAGENS/homePageSecao2Foto1.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#secao2ImagemHolder2 {
+    background-image: url('../../IMAGENS/homePageSecao2Foto2.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Cor azulada das imagens */
+.corImagemBlocoSecao2 {
+    background-color: var(--azulEscuroLevementeVazado);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Texto em cima das imagens */
+.textoImagemBlocoSecao2 {
+    color: var(--branco);
+    width: 80%;
+    text-align: center;
+    font-size: 1.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-weight: bold;
+}
+
+/* Texto dentro dos blocos*/
+.containerTextoBlocoSecao2 {
+    position: relative;
     width: 80%;
 }
+.containerTextoBlocoSecao2 > p {
+    width: 100%;
+    text-align: center;
+}
 
+/* Botão dentro dos blocos */
+.containerBotaoBlocoSecao2 {
+    width: 100%;
+    margin-top: 5%;
+    align-items: baseline;
+}
+.containerBotaoBlocoSecao2 > a {
+    text-decoration: none;
+}
+.containerBotaoBlocoSecao2 > a > p {
+    padding: 2%;
+    color: white;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--laranjaDestaque);
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+/* Animação do mouse em cima*/
+.containerBotaoBlocoSecao2 > a > p:hover {
+    transition-delay: 0s;
+    transform: translateY(-10%);
+    background-color: var(--laranjaDestaqueHover);
+}
+
+
+
+/* Titulo da Seção */
 .tituloPrincipalSecao2 {
     color: black;
     font-size: 2vw;
+    font-weight: bolder;
     text-align: center;
+}
+
+/* Padrão no BG da seção */
+.padraoBgSecao2 {
+    width: 100%;
+    min-height: 20vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.padraoBgSecao2 > svg {
+    width: 100%;
+}
+
+/* CELULAR ----------------------------------------------------------------------------*/
+@media(max-width: 500px){
+
+    /* Texto em cima das imagens */
+    .textoImagemBlocoSecao2 {
+        font-size: 2vh;
+    }
+
+    /* Texto dentro dos blocos */
+    .containerTextoBlocoSecao2 > p {
+        font-size: 1.5vh;
+    }
+
+    /* Texto dentro dos botões */
+    .containerBotaoBlocoSecao2 > a > p {
+        font-size: 1.3vh;
+    }
+
 }

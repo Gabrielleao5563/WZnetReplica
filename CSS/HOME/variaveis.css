@@ -1,8 +1,14 @@
 :root {
+    --azulClaroWZ: #4d629b;
     --azulEscuroWZ: #1c3477;
+    --azulEscuroVazado: #1c347757;
+    --azulEscuroLevementeVazado: #1c3477bb;
     --branco: #ffff;
     --brancoHover: #ececec;
     --laranjaDestaque: #e49f0c;
+    --preto: #000000;
+
+    --laranjaDestaqueHover: #bd840b;
 
     --fontePadrao: Arial, Helvetica, sans-serif;
 }
